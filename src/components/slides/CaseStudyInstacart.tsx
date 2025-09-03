@@ -41,8 +41,29 @@ const CaseStudyInstacart: React.FC<SlideProps> = ({
 
   return (
     <section className={`space-y-12 ${className}`}>
+      {/* REHOOK: The High Stakes Challenge */}
+      <div className="text-center mb-8">
+        <div className="inline-block px-8 py-4 bg-gradient-to-r from-yellow-600 to-orange-600 text-white rounded-full font-bold text-xl shadow-2xl mb-6">
+          🎯 REHOOK: But could we handle the ultimate test?
+        </div>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+          Instacart's <span className="text-red-600 dark:text-red-400">Impossible</span> Demand
+        </h2>
+        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          294 million orders. 5,500 cities. Zero room for error. 
+          <br />
+          <strong className="text-red-600 dark:text-red-400">One partnership that could make or break us</strong>
+        </p>
+      </div>
+
+      {/* Tension Release: The Success */}
       <div className="backdrop-blur-lg bg-gradient-to-r from-green-800/90 to-emerald-900/90 dark:from-green-800/95 dark:to-emerald-900/95 text-white dark:text-gray-100 p-12 rounded-3xl mb-12 border border-green-300/30 dark:border-green-600/30 shadow-2xl">
         <div className="text-center mb-12">
+          {/* Victory Badge */}
+          <div className="inline-block px-6 py-3 bg-gradient-to-r from-green-400 to-emerald-400 text-green-900 rounded-full font-bold text-lg mb-6">
+            ✅ CHALLENGE CONQUERED
+          </div>
+          
           {/* Logo Partnership in Header Section */}
           <div className="flex items-center justify-center space-x-8 mb-8">
             <img src="/driversnet logo.jpeg" alt="Driver Network" className="w-20 h-20 rounded-2xl object-contain bg-white p-3 shadow-lg" />

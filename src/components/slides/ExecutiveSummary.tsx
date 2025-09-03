@@ -14,47 +14,111 @@ const ExecutiveSummary: React.FC<SlideProps> = ({
 }) => {
   return (
     <section className={`min-h-screen flex flex-col justify-center space-y-20 ${className}`}>
-      {/* Problem Statement Hero */}
+      {/* REHOOK: Escalating the Stakes - New Problem Layer */}
       <div className="text-center space-y-12">
         <div className="space-y-6">
-          <div className="inline-block px-6 py-3 bg-gradient-to-r from-red-600 to-orange-600 dark:from-red-700 dark:to-orange-700 text-white dark:text-gray-50 rounded-full font-semibold text-lg content-fade-in">
-            The Brutal Reality
+          {/* Rehook Alert */}
+          <div className="inline-block px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 dark:from-red-700 dark:to-red-800 text-white dark:text-gray-50 rounded-full font-bold text-xl shadow-2xl animate-pulse content-fade-in">
+            🔥 REHOOK: It gets worse...
           </div>
+          
+          {/* WHAT: The escalated problem */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-900 dark:text-gray-100 leading-tight content-fade-in content-stagger-1">
-            Everyone Wants
+            Your Customers
             <br />
-            <span className="text-red-600 dark:text-red-400">Everything</span>
+            <span className="text-red-600 dark:text-red-400">Demand</span>
             <br />
-            <span className="text-gray-700 dark:text-gray-300 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Yesterday</span>
+            <span className="text-orange-600 dark:text-orange-400 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">The Impossible</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto font-light leading-relaxed px-4 content-fade-in content-stagger-2">
-            Customers demand same-day delivery, zero damage, perfect tracking, 
-            and prices that make no economic sense
+          
+          {/* WHY: The exponential challenge */}
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto font-semibold leading-relaxed px-4 content-fade-in content-stagger-2">
+            Same-day delivery + zero damage + perfect tracking + impossible prices
             <br />
-            <strong className="text-red-600 dark:text-red-400">Welcome to modern logistics</strong>
+            <strong className="text-red-600 dark:text-red-400">= Your logistics nightmare just got 400% harder</strong>
           </p>
+          
+          {/* Urgency Timer */}
+          <div className="bg-black/90 text-red-400 p-4 rounded-xl mx-auto max-w-2xl font-mono text-lg content-fade-in content-stagger-3">
+            <div className="flex justify-center items-center space-x-4">
+              <span>Customer patience:</span>
+              <span className="text-2xl font-bold countdown-timer">47 seconds</span>
+              <span className="text-sm animate-pulse">⏰ Ticking down</span>
+            </div>
+          </div>
         </div>
         
-        {/* Interactive Pain Point Calculator */}
-        <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 md:p-12 rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-700 max-w-4xl mx-auto content-fade-in content-stagger-3">
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6 sm:mb-8 text-center">
-            Calculate Your Reality Check
+        {/* Visual Impact Infographic - The Impossible Equation */}
+        <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 md:p-12 rounded-3xl shadow-2xl border border-gray-200 dark:border-gray-700 max-w-6xl mx-auto content-fade-in content-stagger-3">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-8 text-center">
+            The Impossible Equation Visual Reality
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 text-center">
-            <div className="space-y-4 card-stagger content-stagger-4">
-              <div className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 dark:text-gray-100">Customer Expectations</div>
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-600 dark:text-blue-400">↑ 400%</div>
-              <div className="text-gray-600 dark:text-gray-300">Since 2020</div>
+          
+          {/* Visual Flow Chart */}
+          <div className="mb-8">
+            <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
+              
+              {/* Customer Demands Bubble */}
+              <div className="relative">
+                <div className="w-48 h-48 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center text-white p-6">
+                  <div className="text-center">
+                    <div className="text-3xl mb-2">😤</div>
+                    <div className="text-lg font-bold">Customer<br/>Demands</div>
+                    <div className="text-sm mt-2">↑400% Harder</div>
+                  </div>
+                </div>
+                {/* Explosion effect */}
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 rounded-full animate-ping"></div>
+              </div>
+
+              {/* VS Symbol */}
+              <div className="text-6xl font-bold text-red-600 dark:text-red-400">VS</div>
+
+              {/* Your Resources Bubble */}
+              <div className="relative">
+                <div className="w-48 h-48 bg-gradient-to-br from-gray-400 to-gray-600 rounded-full flex items-center justify-center text-white p-6">
+                  <div className="text-center">
+                    <div className="text-3xl mb-2">💸</div>
+                    <div className="text-lg font-bold">Your<br/>Resources</div>
+                    <div className="text-sm mt-2">↓60% Smaller</div>
+                  </div>
+                </div>
+                {/* Shrinking effect */}
+                <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-red-500 rounded-full animate-pulse"></div>
+              </div>
+
             </div>
-            <div className="space-y-4 card-stagger content-stagger-5">
-              <div className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 dark:text-gray-100">Infrastructure Costs</div>
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-600 dark:text-red-400">↑ 250%</div>
-              <div className="text-gray-600 dark:text-gray-300">Same period</div>
+
+            {/* Equals Disaster */}
+            <div className="text-center mt-8">
+              <div className="text-4xl font-bold text-red-600 dark:text-red-400 mb-4">=</div>
+              <div className="inline-block bg-gradient-to-r from-red-600 to-red-800 text-white px-8 py-4 rounded-full text-2xl font-bold animate-pulse">
+                💥 LOGISTICS NIGHTMARE
+              </div>
             </div>
-            <div className="space-y-4 card-stagger content-stagger-6">
-              <div className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 dark:text-gray-100">Your Profit Margin</div>
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-orange-600 dark:text-orange-400">↓ 60%</div>
-              <div className="text-gray-600 dark:text-gray-300">If you're lucky</div>
+          </div>
+          
+          {/* Stats Grid with Visual Enhancement */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center">
+            <div className="space-y-4 p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-xl border border-blue-200 dark:border-blue-700">
+              <div className="text-4xl">📈</div>
+              <div className="text-lg font-bold text-gray-900 dark:text-gray-100">Customer Expectations</div>
+              <div className="text-4xl sm:text-5xl font-bold text-blue-600 dark:text-blue-400">↑ 400%</div>
+              <div className="text-blue-600 dark:text-blue-300 font-medium">Since 2020</div>
+            </div>
+            
+            <div className="space-y-4 p-6 bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/20 dark:to-red-800/20 rounded-xl border border-red-200 dark:border-red-700">
+              <div className="text-4xl">🏗️</div>
+              <div className="text-lg font-bold text-gray-900 dark:text-gray-100">Infrastructure Costs</div>
+              <div className="text-4xl sm:text-5xl font-bold text-red-600 dark:text-red-400">↑ 250%</div>
+              <div className="text-red-600 dark:text-red-300 font-medium">Same period</div>
+            </div>
+            
+            <div className="space-y-4 p-6 bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 rounded-xl border border-orange-200 dark:border-orange-700">
+              <div className="text-4xl">📉</div>
+              <div className="text-lg font-bold text-gray-900 dark:text-gray-100">Your Profit Margin</div>
+              <div className="text-4xl sm:text-5xl font-bold text-orange-600 dark:text-orange-400">↓ 60%</div>
+              <div className="text-orange-600 dark:text-orange-300 font-medium">If you're lucky</div>
             </div>
           </div>
         </div>
